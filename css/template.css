@@ -1,0 +1,44 @@
+#navBar{
+    background-color: darkslategrey;
+    height: 80px;
+    vertical-align: center;
+    align-items: center;
+    padding: 5px;
+}
+
+#body{
+    background-color: grey;
+    vertical-align: center;
+    height: 500px;
+    padding: 5px;
+}
+
+#search{
+    background-color: white;
+    padding: 5px;
+    height: 30px;
+    width: 500px;
+    align-self: center;
+    box-shadow: gray;
+}
+
+#txtSearch{
+    border: none;
+    height: 30px;
+    width: 400px;
+    align-self: auto;
+}
+
+#btnSearch{
+    background-color: white;
+    border: none;
+    border-right: black;
+    height: 30px;
+    align-self: right   ;
+}
+#footer{
+    background-color: darkslategrey;
+    height: 50px;
+    vertical-align: bottom;
+    padding: 5px;
+}
