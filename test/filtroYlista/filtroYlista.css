@@ -1,0 +1,29 @@
+body {
+    min-height: 97vh;
+    min-width: 98vw;
+}
+.container {
+    width: 680px;
+    height: 480px;
+    background-color: lightskyblue;
+    margin: auto;
+}
+.advice-card-container {
+    background-color: lightblue;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding: 15px 20px;
+}
+.advice-card-container:last-child {
+    margin-bottom: unset;
+}
+.header {
+    display: flex;
+}
+.filters {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
