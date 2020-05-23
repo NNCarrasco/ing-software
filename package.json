@@ -1,0 +1,23 @@
+{
+  "name": "ing-software",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NNCarrasco/ing-software.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NNCarrasco/ing-software/issues"
+  },
+  "homepage": "https://github.com/NNCarrasco/ing-software#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-less": "^4.0.1"
+  }
+}

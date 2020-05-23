@@ -1,0 +1,25 @@
+body{
+  margin: auto;
+  width: 640px;
+  height: 100vh;
+}
+
+#mapid{
+  background: #cccccc;
+  height: 480px;
+  width: 640px;
+}
+.bucador-container{
+  width: 640px;
+  height: 60px;
+  margin-bottom: 30px;
+  display: flex;
+}
+.buscador{
+  height: 100%;
+  width: 80%;
+}
+.button{
+  height: 111%;
+  width: 20%;
+}

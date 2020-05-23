@@ -1,0 +1,54 @@
+{
+  "comercios": [
+    {
+      "id": "01",
+      "nombre": "Juliana cuida",
+      "rubro": "Petshop",
+      "direccion": "Avenida lores nº 43",
+      "posicion": {
+        "lon": "-34.533555",
+        "lat": "-58.695713"
+      }
+    },
+    {
+      "id": "02",
+      "nombre": "Rodri",
+      "rubro": "Veterinaria",
+      "direccion": "Avenida lores nº 44",
+      "posicion": {
+        "lon": "-34.543555",
+        "lat": "-58.705713"
+      }
+    },
+    {
+      "id": "03",
+      "nombre": "cuida",
+      "rubro": "Petshop",
+      "direccion": "Avenida lores nº 45",
+      "posicion": {
+        "lon": "-34.523555",
+        "lat": "-58.685713"
+      }
+    },
+    {
+        "id": "04",
+        "nombre": "te corto pelo",
+        "rubro": "Peluqueria",
+        "direccion": "Avenida lores nº 2",
+        "posicion": {
+          "lon": "-34.343555",
+          "lat": "-58.435713"
+        }
+      },
+    {
+      "id": "04",
+      "nombre": "Juliana cuida",
+      "rubro": "Veterinaria",
+      "direccion": "Avenida lores nº 46",
+      "posicion": {
+        "lon": "-34.433555",
+        "lat": "-58.595713"
+      }
+    }
+  ]
+}

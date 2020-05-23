@@ -1,0 +1,55 @@
+body {
+    background-color: grey;
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: unset;
+	.navigation-bar {
+		width: 100%;
+		height: 50px;
+        background-color: darkslategrey;
+        position: sticky;
+        top: 0;
+        .navigation-bar-content {
+            max-width: 1280px;
+            height: inherit;
+            margin: 0 auto;
+            background-color: blue; //FIXME: borrar
+            display: flex;
+            .zone{
+                width: 33%;
+                height: inherit;
+                &.left {
+                    .weather-container {
+                        width: 30px;
+                        height: inherit;
+                        background-color: lightgreen; //FIXME: borrar
+                    }
+                }
+                &.center {
+                    .search {
+                        width: 100px; //FIXME: test
+                        height: inherit;
+                        background-color: lightblue;//FIXME: borrar
+                        height: inherit;
+                    }
+                }
+                &.right {
+                    .user-interaction {
+                        width: 120px;
+                        height: inherit;
+                        background-color: lightcoral;//FIXME: borrar
+                    }
+                }
+            }
+        }
+    }
+    .page-content {
+        min-height: 100vh; //FIXME: borrar
+        background-color: gray; //FIXME: borrar
+        .content-body {
+            background-color: lightgray;//FIXME: borrar
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+    }
+}
