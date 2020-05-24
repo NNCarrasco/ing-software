@@ -1,36 +1,79 @@
+// jquery HTML key 
+const cardsContainerKey = "#card-list";
+const filterContaierKey = "#filter-list";
 
+var appliedFiltersMap = new Map();
+var initialAdviceList;
+var filteredAdviceList;
 
 const init = () => {
-    let adviceList = getAdvices();
-    let cardsContainerKey = ".list"; // TODO: cambiar y que busque por id
+    initialAdviceList = getAdvices();
 
     let adviceFilterList = getAdvicesFilters();
-    let filterContaierKey = ".filters";// TODO: cambiar y que busque por id
 
-    graficAdviceCards(cardsContainerKey, adviceList);
-    graficAdviceFilters(filterContaierKey, adviceFilterList)
+    for(filter of adviceFilterList){
+        appliedFiltersMap.set(filter.id, {//TODO: cambiar las variables filterVarKey y filterValue por uno que no diga filter proq ue si no que filter.filtervalue
+            isFilterign: false,
+            filterVarKey: filter.varKey,
+            filterValue: "",
+        });
+    }
+
+    graficAdviceCards(cardsContainerKey, initialAdviceList);
+    graficAdviceFilters(filterContaierKey, adviceFilterList);
 }
 
 $(document).ready(init);
 
-function getAdvices(){ // Get mock data
+function selectFilter (component) {
+    let filterId = component.dataset.id;
+    let filterValue = component.value;
+
+    let filter = appliedFiltersMap.get(filterId);
+    if(filterValue !== "All") {
+        filter.filterValue = filterValue;
+        filter.isFilterign = true;
+        appliedFiltersMap.set(filterId, filter);
+    } else {
+        filter.filterValue = "";
+        filter.isFilterign = false;
+    }
+    applyfilter();
+}
+
+function applyfilter() {
+    let filteredList = initialAdviceList;
+    let filterMap = appliedFiltersMap;
+
+    for (var filter of filterMap.values()) {
+        if (filter.isFilterign){
+            filteredList = filteredList.filter(item => item[filter.filterVarKey] === filter.filterValue);
+        }
+    }
+
+    emptyElementChildOf(cardsContainerKey);
+    graficAdviceCards(cardsContainerKey, filteredList);
+}
+
+// backend/api gets FIXME: currently is calling mock data
+function getAdvices(){ 
     return _adviceList;
 }
 
-function getAdvicesFilters(){ // Get mock data
+function getAdvicesFilters(){ 
     return _adviceFilters;
 }
 
-function graficAdviceFilters (key, adviceFilterList){
+//grafics controlers
+function graficAdviceFilters (key, adviceFilterList){ //TODO: intentar unificar los grafic
     let filterList = [];
     for(filter of adviceFilterList){
-        filterList.push(constructAdviceFilter(filter, "sarasa"));
+        filterList.push(constructAdviceFilter(filter, "selectFilter")); //TODO: ver como hacer que llame al metodo
     }
-
     $(key).append(filterList);
 }
 
-function graficAdviceCards(key, adviceList){// TODO: hacer validaciones
+function graficAdviceCards(key, adviceList){
     let cardList = [];
     for(advice of adviceList){
         cardList.push(constructAdviceCard(advice))
@@ -79,26 +122,16 @@ function constructAdviceCard(advice) {
     `;
     return cardText;
 }
-function sarasa(component) { // TODO: renombrar, hacer que se pueda filtrar muchos al mismo tiempo
-    let filterField = component.dataset.varkey;
-    let filterValue = component.value;
-    let adviceList = getAdvices();
-    
-    let filteredAdviceList = adviceList.filter( advice => advice[filterField] === filterValue)
-    emptyElementChildOf(".list");
-    graficAdviceCards(".list", filteredAdviceList);
-}
 
-function constructAdviceFilter(filter, onchangeMethodName) { // ver si hacer aun mas generico
-
-    let filterOptions = "<option value='Todo'>Todo</option>";
+function constructAdviceFilter(filter, onchangeMethodName) { //TODO: hacer validaciones por cada campo
+    let filterOptions = "<option value='All'>Todo</option>"; //FIXME: 'Todo' string hardcode => should be a translatable variable
     for(filterOption of filter.options){
         filterOptions += `<option value='${filterOption}' >${filterOption}</option>`;
     }
     let filterText = `
         <div>
             <span class="filter-label">${filter.label}</span>
-            <select onchange="${onchangeMethodName}(this)" data-varkey="${filter.varKey}">${filterOptions}</select>
+            <select onchange="${onchangeMethodName}(this)" data-id="${filter.id}">${filterOptions}</select>
         </div>
     `;
     
