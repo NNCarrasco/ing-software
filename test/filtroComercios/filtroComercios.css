@@ -1,0 +1,65 @@
+.container {
+  box-sizing: border-box;
+}
+.container .filters {
+  height: 32px;
+  max-width: 1040px;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  padding-top: 10px;
+  background-color: #ffffff;
+  box-shadow: #524952 0px 10px 35px -13px;
+  z-index: 10;
+}
+.container .content {
+  display: flex;
+}
+.container .content .map-container {
+  position: sticky;
+  top: 40px;
+  height: fit-content;
+}
+.container .content .map-container .map {
+  width: 600px;
+  height: 400px;
+}
+.container .content .list {
+  width: 400px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.business-card {
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px #0000001a;
+  border-left: 8px solid;
+  border-color: #a4acb7;
+}
+.business-card .header {
+  position: relative;
+}
+.business-card .header .name {
+  font-size: 18px;
+  color: #323f4b;
+  font-weight: 600;
+}
+.business-card .header .rubro {
+  font-size: 18px;
+  color: #323f4b;
+}
+.business-card .header .phone {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 18px;
+  color: #323f4b;
+}
+body {
+  margin: auto;
+  min-height: 97vh;
+  min-width: 98vw;
+}
