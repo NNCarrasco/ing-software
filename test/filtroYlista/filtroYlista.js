@@ -78,38 +78,61 @@ function graficAdviceCards(key, adviceList){
     for(advice of adviceList){
         cardList.push(constructAdviceCard(advice))
     }
-    $(key).append(cardList);
+    if(adviceList.length > 0) {
+        $(key).append(cardList);
+    } else {
+        constructEmptyMessage(key);
+    }
 }
+
 function emptyElementChildOf(key) {
     $(key).empty();
 }
 
 // COMPONENTS CONSTRUCTORS
 
+function constructEmptyMessage(key) {
+    let emptyMessage = `
+        <div class="message">
+            <span>No hay contenido</span>
+        </div>
+    `// FIXME: 'No hay contenido' string hardcode => should be a translatable variable
+    $(key).append(emptyMessage);
+}
+
 function constructAdviceCard(advice) {
+    let animalType;
+    let animalGender;
+    if(advice.adviceType){
+        animalType = getIcons('animal', advice.animalType);
+    }
+    if(advice.gender){
+        animalGender = getIcons('gender', advice.gender);
+    }
     let cardText = `
-        <div class="advice-card-container">
+        <div class="advice-card-container${ advice.adviceType ? ' card-type-'+advice.adviceType : '' } ">
             <div class="header">
-                ${ advice.adviceType ? 
-                    `<div class="advice-type">
-                        ${ advice.adviceType }
-                    </div>` : ""
-                }
                 ${ advice.name ? 
                     `<div class="name">
                         ${ advice.name }
                     </div>` : ""
                 }
-                ${ advice.animalType ? 
+                ${ advice.adviceType ? 
+                    `<div class="advice-type">
+                        ${ advice.adviceType }
+                    </div>` : ""
+                }
+                ${ animalType ? 
                     `<div class="animal-type">
-                        ${ advice.animalType }
+                        ${ animalType }
                     </div>` : ""
                 }
-                ${ advice.gender ? 
-                    `<div class="gender">
-                        ${ advice.gender }
+                ${ animalGender ? 
+                    `<div class="gender ${advice.gender}">
+                        ${ animalGender }
                     </div>` : ""
                 }
+                <div class="line"></div>
             </div>
             <div class="description">
                 ${ advice.description ? 
@@ -136,4 +159,24 @@ function constructAdviceFilter(filter, onchangeMethodName) { //TODO: hacer valid
     `;
     
     return filterText;
+}
+
+// utils
+function getIcons(iconType, value){
+    if (iconType === "animal"){
+        switch (value) {
+            case 'Gato':
+                return '<i class="fas fa-cat"></i>';
+            case 'Perro':
+              return '<i class="fas fa-dog"></i>';
+          }
+    } else if (iconType === "gender") {
+        switch (value) {
+            case 'Macho':
+                return '<i class="fas fa-mars"></i>';
+            case 'Hembra':
+              return '<i class="fas fa-venus"></i>';
+          }
+    }
+    return '';
 }

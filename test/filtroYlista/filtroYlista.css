@@ -1,29 +1,83 @@
 body {
-    min-height: 97vh;
-    min-width: 98vw;
+  min-height: 97vh;
+  min-width: 98vw;
 }
-.container {
-    width: 680px;
-    height: 480px;
-    background-color: lightskyblue;
-    margin: auto;
+body .container {
+  box-sizing: border-box;
+  width: 680px;
+  min-height: 480px;
+  margin: auto;
+}
+body .container .filters {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+body .container .list {
+  padding: 0 20px;
 }
 .advice-card-container {
-    background-color: lightblue;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-    padding: 15px 20px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px #0000001A;
+  border-left: 8px solid;
+  border-color: #a4acb7;
+}
+.advice-card-container:hover {
+  cursor: pointer;
+  background-color: #F0F0F0;
+  border-color: #909090;
 }
 .advice-card-container:last-child {
-    margin-bottom: unset;
+  margin-bottom: unset;
 }
-.header {
-    display: flex;
+.advice-card-container .header {
+  position: relative;
+  align-items: center;
+  padding-bottom: 12px;
 }
-.filters {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+.advice-card-container .header .name {
+  font-size: 18px;
+  color: #323F4B;
+  font-weight: 600;
+}
+.advice-card-container .header .advice-type {
+  font-size: 18px;
+  color: #323F4B;
+}
+.advice-card-container .header .animal-type {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 20px;
+  color: dimgrey;
+}
+.advice-card-container .header .gender {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 24px;
+}
+.advice-card-container .header .gender.Macho {
+  color: dodgerblue;
+}
+.advice-card-container .header .gender.Hembra {
+  color: hotpink;
+}
+.advice-card-container .header .line {
+  padding-top: 12px;
+  border-bottom: 1px solid #CBD2D9;
+  width: 72px;
+}
+.message {
+  border: 1px dashed #ccc;
+  width: fit-content;
+  padding: 19px 25px;
+  border-radius: 16px;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #323F4B;
 }
