@@ -4,15 +4,15 @@ function getIcons(iconType, value){
             case 'Gato':
                 return '<i class="fas fa-cat"></i>';
             case 'Perro':
-              return '<i class="fas fa-dog"></i>';
-          }
+                return '<i class="fas fa-dog"></i>';
+        }
     } else if (iconType === "gender") {
         switch (value) {
             case 'Macho':
                 return '<i class="fas fa-mars"></i>';
             case 'Hembra':
-              return '<i class="fas fa-venus"></i>';
-          }
+                return '<i class="fas fa-venus"></i>';
+        }
     }
     return '';
 }
