@@ -1,4 +1,5 @@
 let clusterMap;
+let markerList = [];
 let map;
 
 function initMap(initLocation, initZoom) {
@@ -14,24 +15,33 @@ function initMap(initLocation, initZoom) {
 	// });
 }
 
-function constructClusterMap(itemsList) {
+function constructClusterMap(itemsList, eventFunction = undefined) {
 	//TODO: agregar tema de color de marker | intentar colorear los cluster por color
 	clusterMap = new Map();
+	let localMarkerList = [];
 	for (let item of itemsList) {
-		let marker = L.marker([item.lat, item.lon]);
-		let idCluster = clusterMap.get(item.id);
+		let marker = L.marker([item.lat, item.lon], {id:item.id});
+		if(eventFunction) {
+			marker.on('click', eventFunction);
+		}
+		if(item.popUpMessage){
+			marker.bindPopup(item.popUpMessage);
+		}
+		let idCluster = clusterMap.get(item.clusterId);
 		if (idCluster) {
 			idCluster.addLayer(marker);
-			clusterMap.set(item.id, idCluster);
+			clusterMap.set(item.clusterId, idCluster);
 		} else {
 			let cluster = L.markerClusterGroup();
 			cluster.addLayer(marker);
-			clusterMap.set(item.id, cluster);
+			clusterMap.set(item.clusterId, cluster);
 		}
+		localMarkerList.push(marker)
     }
     for (let cluster of clusterMap.values()) {
 		cluster.addTo(map);
 	}
+	markerList = localMarkerList;
 }
 
 function clearMap() {
@@ -40,4 +50,13 @@ function clearMap() {
     }
 }
 
-export {initMap, constructClusterMap, clearMap};
+function openPopUpById (id) {
+	for(let marker of markerList){
+		if(marker.options.id === id){
+			marker.openPopup()
+			map.setView(marker._latlng, 16)
+		}
+    }
+}
+
+export {initMap, constructClusterMap, clearMap, openPopUpById};

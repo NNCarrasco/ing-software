@@ -71,6 +71,22 @@ body .container .list {
   border-bottom: 1px solid #CBD2D9;
   width: 72px;
 }
+.advice-card-container .description .display-none {
+  display: inline;
+}
+.advice-card-container .description .extra-data {
+  padding: 10px;
+}
+.advice-card-container .description .extra-data .img {
+  margin: auto;
+  width: 250px;
+  height: 200px;
+}
+.advice-card-container .description .extra-data .img img {
+  width: inherit;
+  height: inherit;
+  object-fit: contain;
+}
 .message {
   border: 1px dashed #ccc;
   width: fit-content;

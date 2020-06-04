@@ -1,6 +1,6 @@
-function constructBussinesCard(business) { //TODO: LAS VARIABLES ESTAN ES ESPAÑOL
+function constructBussinesCard(business, onclick) { //TODO: LAS VARIABLES ESTAN ES ESPAÑOL
 	return `
-    <div class="business-card" ${business.id? "id='" + business.id + "'" : ""} > 
+    <div class="business-card" ${business.id? "id='" + business.id + "'" : ""} onclick="${onclick}(this)" > 
         <div class="header">
             ${ business.nombre ? 
                 `<div class="name">
