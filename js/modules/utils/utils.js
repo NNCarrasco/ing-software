@@ -28,6 +28,29 @@ function getIcons(iconType, value){
             case 'clock':
                 return '<i class="far fa-clock"></i>';
         }
+    } else if (iconType === "weather") {
+        switch (value) {
+            case 0:
+                return '<i class="fas fa-sun"></i>';
+            case 1:
+                return '<i class="fas fa-cloud-sun"></i>';
+            case 2:
+                return '<i class="fas fa-cloud-sun"></i>';
+            case 4:
+                return '<i class="fas fa-cloud"></i>';
+            case 11:
+                return '<i class="fas fa-cloud-sun-rain"></i>';
+            case 'temp':
+                return '<i class="fas fa-thermometer-half"></i>';
+            case 'humidity':
+                return '<i class="fas fa-tint"></i>';
+            case 'wind':
+                return '<i class="fas fa-wind"></i>';
+            case 'temp-max':
+                return '<i class="fas fa-temperature-high"></i>';
+            case 'temp-min':
+                return '<i class="fas fa-temperature-low"></i>';
+        }
     }
     return '';
 }

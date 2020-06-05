@@ -2,6 +2,8 @@ import {construct, emptyElementChildOf} from '../../js/modules/draw/draw.js';
 
 var alertList;
 var alertKey = "#alert-list";
+var todayKey = "#today";
+var forecastKey = "#forecast";
 var smn_alerts = "https://ws.smn.gob.ar/alerts/type/AL" //alertas SMN
 var heroku_alerts = "https://weatherservices.herokuapp.com/api/alerts/ByDay/0" //alertas SMN
 var heroku_weather = "https://weatherservices.herokuapp.com/api/weather/" //alertas SMN
@@ -14,7 +16,8 @@ const init = () => {
     .then( response => {
         todayWeather = getToday(response.items[0]);
         forecastWeather = getForecast(Object.values(response.items[0].forecast.forecast));
-        console.log(response.items[0]);
+        construct('weather-today-detail', todayKey, [todayWeather]);
+        construct('weather-forecast', forecastKey, forecastWeather);
     })
     .catch((error) => {
         console.log(error.message);
@@ -39,10 +42,11 @@ const init = () => {
 
 function getToday(weather){
     return { 
+        weatherId:weather.weather.id,
         temp:weather.weather.temp, 
         tempDesc:weather.weather.tempDesc,
         humidity:weather.weather.humidity,
-        pressure:weather.weather.pressure,
+        wind_speed:weather.weather.wind_speed,
         description:weather.weather.description
     };
 }
@@ -66,8 +70,8 @@ function heroku_req(){
     fetch(heroku_alerts)
     .then( response => response.json() )
     .then( response => {
-         alertList = getAlert(response.alerts);
-         construct('alert', alertKey, alertList);
+        alertList = getAlert(response.alerts);
+        construct('alert', alertKey, alertList);
     })
     .catch((error) => {
         console.log(error.message);

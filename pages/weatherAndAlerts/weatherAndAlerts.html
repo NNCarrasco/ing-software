@@ -12,11 +12,19 @@
     <!-- page css -->
     <link rel="stylesheet" href="../../css/pages/weatherAndAlerts/weatherAndAlerts.css">
     <!-- component css -->
+    <link rel="stylesheet" href="../../css/component/weather-today-container/weather-today-container.css">
+    <link rel="stylesheet" href="../../css/component/forecast-card/forecast-card.css">
     <link rel="stylesheet" href="../../css/component/alert-card/alert-card.css">
 </head>
 <body>
     <div class="container">
-        <div class="alerts" id="alert-list"></div>
+        <div class="weatherContainer">
+            <div id="today"></div>
+            <div id="forecast"></div>
+        </div>
+        <div class="alerts" id="alert-list">
+            <span class="alert-title">Alertas</span>
+        </div>
     </div>
 </body>
 </html>

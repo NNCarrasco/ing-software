@@ -4,6 +4,8 @@ import constructFilter from '../component/filter.js';
 import constructBussinesCard from '../component/businessCard.js';
 import constructAlertCard from '../component/alertCard.js';
 import constructBusinessDetail from '../component/businessDetail.js';
+import constructWeatherTodayDetail from '../component/weatherTodayDetail.js';
+import constructWeatherForecastCard from '../component/weatherForecastCard.js';
 
 function construct (type, jQueryKey, elements, event = undefined){
     let constructedList = [];
@@ -34,6 +36,12 @@ function constructBy (type, element, event) {
             break;
         case "business-detail":
             constructedElement = constructBusinessDetail(element, event.onclick);
+            break;
+        case "weather-today-detail":
+            constructedElement = constructWeatherTodayDetail(element);
+            break;
+        case "weather-forecast":
+            constructedElement = constructWeatherForecastCard(element);
             break;
     }
     return constructedElement;

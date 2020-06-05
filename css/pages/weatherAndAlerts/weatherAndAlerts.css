@@ -4,6 +4,16 @@
   box-sizing: border-box;
   max-width: 680px;
 }
+.container #forecast {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.container .alert-title {
+  font-size: 30px;
+}
 body {
   min-height: 97vh;
   min-width: 98vw;
