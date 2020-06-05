@@ -1,0 +1,10 @@
+.message {
+  border: 1px dashed #ccc;
+  width: fit-content;
+  padding: 19px 25px;
+  border-radius: 16px;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #323F4B;
+}

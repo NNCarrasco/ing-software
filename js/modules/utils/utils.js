@@ -21,6 +21,8 @@ function getIcons(iconType, value){
                 return '<i class="fas fa-star partner-icon"></i>';
             case 'x':
                 return '<i class="fas fa-times"></i>';
+            case 'arrow':
+                return '<i class="fas fa-chevron-right"></i>';
         }
     }
     return '';

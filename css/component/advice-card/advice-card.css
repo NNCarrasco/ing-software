@@ -1,21 +1,3 @@
-body {
-  min-height: 97vh;
-  min-width: 98vw;
-}
-body .container {
-  box-sizing: border-box;
-  width: 680px;
-  min-height: 480px;
-  margin: auto;
-}
-body .container .filters {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-}
-body .container .list {
-  padding: 0 20px;
-}
 .advice-card-container {
   margin-bottom: 15px;
   box-sizing: border-box;
@@ -24,6 +6,14 @@ body .container .list {
   box-shadow: 0px 4px 10px #0000001A;
   border-left: 8px solid;
   border-color: #a4acb7;
+}
+.advice-card-container.opened .description .extra-data {
+  display: unset;
+}
+.advice-card-container.opened .header .fa-chevron-right {
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  transform: rotate(90deg);
 }
 .advice-card-container:hover {
   cursor: pointer;
@@ -71,10 +61,19 @@ body .container .list {
   border-bottom: 1px solid #CBD2D9;
   width: 72px;
 }
-.advice-card-container .description .display-none {
-  display: none;
+.advice-card-container .header .fa-chevron-right {
+  position: absolute;
+  color: dimgrey;
+  transition: 0.1s;
+  top: 50px;
+  font-size: 25px;
+  right: 9px;
+}
+.advice-card-container .description {
+  max-width: 85%;
 }
 .advice-card-container .description .extra-data {
+  display: none;
   padding: 10px;
 }
 .advice-card-container .description .extra-data .img {
@@ -86,14 +85,4 @@ body .container .list {
   width: inherit;
   height: inherit;
   object-fit: contain;
-}
-.message {
-  border: 1px dashed #ccc;
-  width: fit-content;
-  padding: 19px 25px;
-  border-radius: 16px;
-  margin: auto;
-  margin-top: 20px;
-  font-size: 18px;
-  color: #323F4B;
 }

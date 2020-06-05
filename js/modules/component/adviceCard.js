@@ -3,6 +3,7 @@ import getIcons from "../utils/utils.js"
 function constructAdviceCard(advice, onclick) {
     let animalType;
     let animalGender;
+    let arrowIcon = getIcons("info", "arrow")
     if(advice.adviceType){
         animalType = getIcons('animal', advice.animalType);
     }
@@ -32,6 +33,7 @@ function constructAdviceCard(advice, onclick) {
                         ${ animalGender }
                     </div>` : ""
                 }
+                ${arrowIcon}
                 <div class="line"></div>
             </div>
             <div class="description">
