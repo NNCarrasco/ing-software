@@ -23,6 +23,10 @@ function getIcons(iconType, value){
                 return '<i class="fas fa-times"></i>';
             case 'arrow':
                 return '<i class="fas fa-chevron-right"></i>';
+            case 'calendar':
+                return '<i class="far fa-calendar-alt"></i>';
+            case 'clock':
+                return '<i class="far fa-clock"></i>';
         }
     }
     return '';
