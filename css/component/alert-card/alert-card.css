@@ -1,0 +1,49 @@
+.alert-card-container {
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px #0000001A;
+}
+.alert-card-container .header {
+  position: relative;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.alert-card-container .header .title {
+  padding-bottom: 10px;
+  font-size: 22px;
+}
+.alert-card-container .header .date {
+  position: absolute;
+  top: 0;
+  right: 100px;
+}
+.alert-card-container .header .hour {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.alert-card-container .header .line {
+  border-bottom: 1px solid;
+  width: 50px;
+  margin-left: 10px;
+}
+.alert-card-container .description {
+  padding: 10px;
+  font-size: 18px;
+}
+.alert-card-container .alert-zones {
+  padding: 10px;
+}
+.alert-card-container .alert-zones .item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
+.alert-card-container .alert-zones .item:nth-child(odd) {
+  background-color: #EAF0F6;
+}
+.alert-card-container .alert-zones .item:nth-child(even) {
+  background-color: #F4F7FA;
+}

@@ -1,0 +1,49 @@
+.alert-card-container {
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px #0000001A;
+    .header {
+        position: relative;
+        font-size: 18px;
+        padding-bottom: 10px;
+        .title {
+            padding-bottom: 10px;
+            font-size: 22px;
+        }
+        .date {
+            position: absolute;
+            top: 0;
+            right: 100px;
+        }
+        .hour {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .line {
+            border-bottom: 1px solid;
+            width: 50px;
+            margin-left: 10px;
+        }
+    }
+    .description {
+        padding: 10px;
+        font-size: 18px;
+    }
+    .alert-zones {
+        padding: 10px;
+        .item {  
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            &:nth-child(odd) {
+                background-color: #EAF0F6;
+            }
+            &:nth-child(even) {
+                background-color: #F4F7FA;
+            }
+        }
+    }
+}
