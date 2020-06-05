@@ -5,7 +5,7 @@ var alertKey = "#alert-list";
 var smn_alerts = "https://ws.smn.gob.ar/alerts/type/AL" //alertas SMN
 var heroku_alerts = "https://weatherservices.herokuapp.com/api/alerts/ByDay/0" //alertas SMN
 var heroku_weather = "https://weatherservices.herokuapp.com/api/weather/" //alertas SMN
-var weather;
+var weatherState;
 const init = () => {
     fetch(heroku_weather)
     .then( response => response.json() )
