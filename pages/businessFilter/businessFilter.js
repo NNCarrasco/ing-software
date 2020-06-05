@@ -1,7 +1,7 @@
 import {construct, emptyElementChildOf} from '../../js/modules/draw/draw.js';
 import {_businessList, _businessFilters} from '../../js/mock/data.js';
 import {initFilter, selectFilter} from '../../js/modules/filter/filter.js';
-import {initMap, constructClusterMap, clearMap, openPopUpById} from '../../js/modules/map/map.js';
+import {initMap, constructClusterMap, clearMap, openPopUpById, assignIcon} from '../../js/modules/map/map.js';
 
 const filterContaierKey = "#filter-list";
 const cardsContainerKey = "#business-list";
@@ -17,6 +17,8 @@ const init = () => {
 
     let ungsLocation = [-34.5221554, -58.7000067];
     initMap(ungsLocation, 16);
+    assignIcon('../../../assets/markerIcons/marker-star.png', "isPartner", "Si")
+    assignIcon('../../../assets/markerIcons/marker.png', "isPartner", "No")
     constructClusterMap(createListForClusterMap(initialBusinessList), onMarkerClick);
 
     construct('business-card', cardsContainerKey, initialBusinessList, {onclick: "businessCardClick"});
@@ -76,8 +78,15 @@ function createListForClusterMap(businessList){
     let listForClusterMap;
 
     listForClusterMap = businessList.map(b => {
-        let message = "hola" //TODO: construct message
-        return {id:b.id, clusterId: b.rubro, lat:b.posicion.lat, lon:b.posicion.lon, popUpMessage:message};
+        let message = `<p>${b.nombre}<br>${b.rubro}</p>`
+        return {
+            id:b.id, 
+            clusterId: b.rubro, 
+            lat:b.posicion.lat, 
+            lon:b.posicion.lon, 
+            popUpMessage:message,
+            isPartner:b.isPartner,
+        };
     })
     
     return listForClusterMap;

@@ -13,6 +13,15 @@ function getIcons(iconType, value){
             case 'Hembra':
                 return '<i class="fas fa-venus"></i>';
         }
+    } else if (iconType === "info") {
+        switch (value) {
+            case 'phone':
+                return '<i class="fas fa-phone-square phone-icon"></i>';
+            case 'partner':
+                return '<i class="fas fa-star partner-icon"></i>';
+            case 'x':
+                return '<i class="fas fa-times"></i>';
+        }
     }
     return '';
 }

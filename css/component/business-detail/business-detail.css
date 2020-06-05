@@ -1,0 +1,47 @@
+.business-detail {
+  position: relative;
+  padding: 34px 20px 20px 20px;
+  color: #323f4b;
+  box-sizing: border-box;
+}
+.business-detail .header {
+  padding: 5px;
+  border-bottom: 1px solid;
+  position: relative;
+  margin-bottom: 20px;
+}
+.business-detail .header .close-icon {
+  position: absolute;
+  top: -10px;
+  right: 0px;
+  font-size: 25px;
+}
+.business-detail .header .close-icon:hover {
+  cursor: pointer;
+}
+.business-detail .header .name {
+  font-size: 25px;
+  color: #323f4b;
+  font-weight: 600;
+}
+.business-detail .header .type {
+  font-size: 23px;
+  padding-bottom: 20px;
+}
+.business-detail .header .phone {
+  font-size: 20px;
+}
+.business-detail .header .time-work {
+  font-size: 20px;
+}
+.business-detail .header .mail {
+  font-size: 20px;
+}
+.business-detail .header .address {
+  font-size: 20px;
+}
+.business-detail .description {
+  font-size: 20px;
+  overflow: auto;
+  height: 150px;
+}

@@ -1,0 +1,40 @@
+.container {
+  margin: auto;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.container .filters {
+  height: 32px;
+  max-width: 1040px;
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  padding-top: 10px;
+  background-color: #ffffff;
+  box-shadow: #524952 0px 10px 35px -13px;
+  z-index: 10;
+}
+.container .content {
+  display: flex;
+}
+.container .content .map-container {
+  position: sticky;
+  top: 45px;
+  height: fit-content;
+  max-width: 600px;
+}
+.container .content .map-container .map {
+  width: 600px;
+  height: 400px;
+}
+.container .content .list {
+  width: 400px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+body {
+  min-height: 97vh;
+  min-width: 98vw;
+}

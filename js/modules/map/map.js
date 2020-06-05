@@ -1,6 +1,7 @@
 let clusterMap;
 let markerList = [];
 let map;
+let iconAssignation = [];
 
 function initMap(initLocation, initZoom) {
 	map = L.map("mapid").setView(initLocation, initZoom);
@@ -20,13 +21,7 @@ function constructClusterMap(itemsList, eventFunction = undefined) {
 	clusterMap = new Map();
 	let localMarkerList = [];
 	for (let item of itemsList) {
-		let marker = L.marker([item.lat, item.lon], {id:item.id});
-		if(eventFunction) {
-			marker.on('click', eventFunction);
-		}
-		if(item.popUpMessage){
-			marker.bindPopup(item.popUpMessage);
-		}
+		let marker = createMarker(item, eventFunction);
 		let idCluster = clusterMap.get(item.clusterId);
 		if (idCluster) {
 			idCluster.addLayer(marker);
@@ -41,9 +36,46 @@ function constructClusterMap(itemsList, eventFunction = undefined) {
     for (let cluster of clusterMap.values()) {
 		cluster.addTo(map);
 	}
+	let group = new L.featureGroup(localMarkerList);
+	map.fitBounds(group.getBounds());
 	markerList = localMarkerList;
 }
 
+function createMarker (item, eventFunction){
+	let markerIcon;
+	let marker
+	for(let iconAssig of iconAssignation){
+		if(iconAssig.value === item[iconAssig.varKey] ){
+			markerIcon = L.icon({
+				iconUrl: iconAssig.iconPath,
+				iconSize: [32, 32],
+			});
+		}
+	}
+	if (markerIcon) {
+		marker = L.marker([item.lat, item.lon], {id:item.id, icon:markerIcon});
+	} else {
+		marker = L.marker([item.lat, item.lon], {id:item.id});
+	}
+	if(eventFunction) {
+		marker.on('click', eventFunction);
+	}
+	if(item.popUpMessage){
+		marker.bindPopup(item.popUpMessage);
+	}
+	return marker;
+}
+
+function assignIcon(iconPath, varKey, value) {
+	if(iconPath && varKey && value){ 
+		let assignation = {
+				varKey: varKey,
+				value: value,
+				iconPath: iconPath,
+			}
+		iconAssignation.push(assignation)
+	}
+}
 function clearMap() {
     for(let cluster of clusterMap.values()){
         cluster.clearLayers();
@@ -59,4 +91,4 @@ function openPopUpById (id) {
     }
 }
 
-export {initMap, constructClusterMap, clearMap, openPopUpById};
+export {initMap, constructClusterMap, clearMap, openPopUpById, assignIcon};

@@ -30,6 +30,7 @@ var _businessList = [
 			lat: "-34.52077208970604",
 			lon: "-58.70211839675904",
 		},
+		isPartner: "No",
 	},
 	{
 		id: "b-3",
@@ -44,6 +45,7 @@ var _businessList = [
 			lat: "-34.520825127955575",
 			lon: "-58.705465793609626",
 		},
+		isPartner: "No",
 	},
 	{
 		id: "b-4",
@@ -58,6 +60,7 @@ var _businessList = [
 			lat: "-34.5242725417377",
 			lon: "-58.7060022354126",
 		},
+		isPartner: "Si",
 	},
 	{
 		id: "b-5",
@@ -72,6 +75,7 @@ var _businessList = [
 			lat: "-34.51854445273208",
 			lon: "-58.70166778564454",
 		},
+		isPartner: "No",
 	},
 	{
 		id: "b-0",
@@ -86,6 +90,7 @@ var _businessList = [
 			lat: "-34.51854445273208",
 			lon: "-58.70166778564454",
 		},
+		isPartner: "No",
 	},
 	{
 		id: "b-0",
@@ -100,6 +105,7 @@ var _businessList = [
 			lat: "-34.51854445273208",
 			lon: "-58.70166778564454",
 		},
+		isPartner: "No",
 	},
 	{
 		id: "b-0",
@@ -114,6 +120,7 @@ var _businessList = [
 			lat: "-34.51854445273208",
 			lon: "-58.70166778564454",
 		},
+		isPartner: "No",
 	},
 	{
 		id: "b-0",
@@ -128,6 +135,7 @@ var _businessList = [
 			lat: "-34.51854445273208",
 			lon: "-58.70166778564454",
 		},
+		isPartner: "No",
 	},
 	{
 		id: "b-0",
@@ -142,6 +150,7 @@ var _businessList = [
 			lat: "-34.51854445273208",
 			lon: "-58.70166778564454",
 		},
+		isPartner: "No",
 	},
 	{
 		id: "b-0",
@@ -156,6 +165,7 @@ var _businessList = [
 			lat: "-34.51854445273208",
 			lon: "-58.70166778564454",
 		},
+		isPartner: "No",
 	},
 	{
 		id: "b-0",
@@ -170,6 +180,7 @@ var _businessList = [
 			lat: "-34.51854445273208",
 			lon: "-58.70166778564454",
 		},
+		isPartner: "No",
 	},
 	{
 		id: "b-0",
@@ -184,6 +195,7 @@ var _businessList = [
 			lat: "-34.51854445273208",
 			lon: "-58.70166778564454",
 		},
+		isPartner: "No",
 	},
 	{
 		id: "b-0",
@@ -198,6 +210,7 @@ var _businessList = [
 			lat: "-34.51854445273208",
 			lon: "-58.70166778564454",
 		},
+		isPartner: "No",
 	},
 	{
 		id: "b-0",
@@ -212,6 +225,7 @@ var _businessList = [
 			lat: "-34.51854445273208",
 			lon: "-58.70166778564454",
 		},
+		isPartner: "No",
 	},
 ];
 

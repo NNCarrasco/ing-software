@@ -1,9 +1,14 @@
+import getIcons from "../utils/utils.js"
+
 function constructBusinessDetail(business, onclick) { //TODO: LAS VARIABLES ESTAN ES ESPAÑOL
+    let icons = {};
+    icons.phone = getIcons("info", "phone");
+    icons.x = getIcons("info", "x");
     return `
     <div class="business-detail"> 
         <div class="header">
             <div class="close-icon" id="close-icon" onclick="${onclick}()">
-                <i class="fas fa-times"></i>
+                ${ icons.x }
             </div>
             ${ business.nombre ? 
                 `<div class="name">
@@ -17,7 +22,7 @@ function constructBusinessDetail(business, onclick) { //TODO: LAS VARIABLES ESTA
             }
             ${ business.telefono ? 
                 `<div class="phone">
-                    <i class="fas fa-phone-square phone-icon"></i>
+                    ${ icons.phone }
                     ${ business.telefono }
                 </div>` : ""
             }

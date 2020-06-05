@@ -1,0 +1,48 @@
+.business-card {
+	margin-bottom: 15px;
+	box-sizing: border-box;
+	padding: 15px 20px;
+	border-radius: 8px;
+	box-shadow: 0px 4px 10px #0000001a;
+	border-left: 8px solid;
+    border-color: #a4acb7;
+    &:hover {
+        cursor: pointer;
+        background-color: #F0F0F0;
+        border-color: #909090;
+    }
+    &.select {
+        border-color: #6E8ABF;
+        background-color: lightblue;
+        &:hover {
+            border-color: #586E99;
+            background-color: #8AADB8;
+        }
+    }
+
+	.header {
+		position: relative;
+		.name {
+			font-size: 18px;
+			color: #323f4b;
+			font-weight: 600;
+		}
+		.rubro {
+			font-size: 18px;
+			color: #323f4b;
+		}
+		.phone {
+			position: absolute;
+			top: 5px;
+			right: 10px;
+			font-size: 18px;
+			color: #323f4b;
+        }
+        .partner-icon{
+            position: absolute;
+            top: -5px;
+            right: -14px;
+            color: darkviolet;
+        }
+	}
+}
