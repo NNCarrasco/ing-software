@@ -5,6 +5,8 @@ function getIcons(iconType, value){
                 return '<i class="fas fa-cat"></i>';
             case 'Perro':
                 return '<i class="fas fa-dog"></i>';
+            case 'Otros':
+                return '<i class="fas fa-dragon"></i>';
         }
     } else if (iconType === "gender") {
         switch (value) {

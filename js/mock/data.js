@@ -310,7 +310,7 @@ var _adviceList = [
 	{
 		id: "a-6",
 		adviceType: "Perdido",
-		animalType: "Tortuga",
+		animalType: "Otros",
 		name: "Flash",
 		gender: "Hembra",
 		age: "12",
@@ -356,7 +356,7 @@ var _adviceFilters = [
 		id: "af-3",
 		label: "Tipo de animal",
 		varKey: "animalType",
-		options: ["Gato", "Perro", "Tortuga", "Otros"],
+		options: ["Gato", "Perro", "Otros"],
 	},
 ];
 
