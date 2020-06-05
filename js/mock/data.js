@@ -1,4 +1,4 @@
-import { catBlobImg, dogBlobImg } from "./blob-images.js"
+import { catBlobImg, dogBlobImg, turtleBlobImg, iguanaBlobImg } from "./blob-images.js"
 var _businessList = [
 	{
 		id: "b-1",
@@ -236,9 +236,15 @@ var _adviceList = [
 		animalType: "Gato",
 		name: "Rufus",
 		gender: "Macho",
-		age: "1 años",
+		age: "1 año",
 		description:
 			"Es un gato blanco con manchas negras, es manso y bueno con los niños, esta con todas sus vacunas.",
+		img: catBlobImg,
+		address: "Pasco 1222",
+		date: "21-1-2020",
+		phoneNumber: "11-3682-4121",
+		email: "elbagallo@yahoo.com.ar",
+		ownerName: "Elba"
 	},
 	{
 		id: "a-2",
@@ -250,6 +256,11 @@ var _adviceList = [
 		description:
 			"Le gusta jugar, esta acostumbrado a salir dos veces al dia a pasear.",
 		img: dogBlobImg,
+		address: "Santiago de Chile 1470",
+		date: "12-9-2019",
+		phoneNumber: "11-3584-4354",
+		email: "julio.mercado@gmail.com",
+		ownerName: "Julio"
 	},
 	{
 		id: "a-3",
@@ -257,15 +268,75 @@ var _adviceList = [
 		animalType: "Gato",
 		name: "Pelusa",
 		gender: "Hembra",
-		age: "6 año",
+		age: "6 años",
 		description: "Es negro con ojos amarillos, tiene un collar rosa.",
 		img: catBlobImg,
 		address: "esq San Juan nº32 y Jujuy",
 		date: "2-2-2020",
-		phoneNumber: "1122334455",
-		email: "test@test.com",
-		ownerName: "Julio",
+		phoneNumber: "11-2338-4155",
+		email: "juanpi@hotmail.com",
+		ownerName: "Juan Pablo"
 	},
+	{
+		id: "a-4",
+		adviceType: "Encontrado",
+		animalType: "Perro",
+		name: "Firulais",
+		gender: "Macho",
+		age: "-",
+		description: "Se encontró perro marca perro deambulando por Serrano y Pringles",
+		img: dogBlobImg,
+		address: "Pringles 800",
+		date: "2-6-2020",
+		phoneNumber: "11-3525-4412",
+		email: "fermaldonado@gmail.com",
+		ownerName: "Fernando"
+	},
+	{
+		id: "a-5",
+		adviceType: "Encontrado",
+		animalType: "Gato",
+		name: "Fichis",
+		gender: "Macho",
+		age: "-",
+		description: "Gato siames encontrado en la calle",
+		img: catBlobImg,
+		address: "Juan B Justo 90 9°B",
+		date: "21-5-2020",
+		phoneNumber: "11-4991-8574",
+		email: "casimiradecerca@gmail.com",
+		ownerName: "Casimira Decerca"
+	},
+	{
+		id: "a-6",
+		adviceType: "Perdido",
+		animalType: "Tortuga",
+		name: "Flash",
+		gender: "Hembra",
+		age: "12",
+		description: "Se escapo en un descuido, le gusta la velocidad",
+		img: turtleBlobImg,
+		address: "Presidente Peron 2055",
+		date: "4-6-2020",
+		phoneNumber: "11-3589-8759",
+		email: "manuelaberta@gmail.com",
+		ownerName: "Manuela"
+	},
+	{
+		id: "a-7",
+		adviceType: "Adopcion",
+		animalType: "Iguana",
+		name: "Birra",
+		gender: "Hembra",
+		age: "5",
+		description: "Se da en adopción por mudanza, muy tranquila y compañera",
+		img: iguanaBlobImg,
+		address: "Muñoz 1298",
+		date: "12-4-2020",
+		phoneNumber: "11-5211-1236",
+		email: "joseargento@gmail.com",
+		ownerName: "Jose"
+	}
 ];
 
 var _adviceFilters = [
