@@ -325,7 +325,7 @@ var _adviceList = [
 	{
 		id: "a-7",
 		adviceType: "Adopcion",
-		animalType: "Iguana",
+		animalType: "Otros",
 		name: "Birra",
 		gender: "Hembra",
 		age: "5",
@@ -356,7 +356,7 @@ var _adviceFilters = [
 		id: "af-3",
 		label: "Tipo de animal",
 		varKey: "animalType",
-		options: ["Gato", "Perro"],
+		options: ["Gato", "Perro", "Tortuga", "Otros"],
 	},
 ];
 
