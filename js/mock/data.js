@@ -2,15 +2,15 @@ import { catBlobImg, dogBlobImg, turtleBlobImg, iguanaBlobImg } from "./blob-ima
 var _businessList = [
 	{
 		id: "b-1",
-		nombre: "Juliana cuida",
-		rubro: "Petshop",
+		name: "Juliana cuida",
+		type: "Petshop",
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
 		descriptionLong:
 			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam omnis rem ut id quas nulla officiis ea perferendis consequatur, obcaecati voluptatibus. Distinctio illo consequatur quidem quis ad modi perferendis nemo! \nLorem ipsum dolor, sit amet consectetur adipisicing elit. Totam omnis rem ut id quas nulla officiis ea perferendis consequatur, obcaecati voluptatibus. Distinctio illo consequatur quidem quis ad modi perferendis nemo!",
-		telefono: "1122334455",
-		horario: "De 8:00 a 18:00 horas",
-		direccion: "Avenida lores nº 43",
+		phone: "1122334455",
+		timeWork: "De 8:00 a 18:00 horas",
+		address: "Avenida lores nº 43",
 		email: "test@test.com",
 		posicion: {
 			lat: "-34.5199057935168",
@@ -20,13 +20,13 @@ var _businessList = [
 	},
 	{
 		id: "b-2",
-		nombre: "Rodri",
-		rubro: "Veterinaria",
+		name: "Rodri",
+		type: "Veterinaria",
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
-		telefono: "1122334455",
-		horario: "De 8:00 a 18:00 horas",
-		direccion: "Avenida lores nº 44",
+		phone: "1122334455",
+		timeWork: "De 8:00 a 18:00 horas",
+		address: "Avenida lores nº 44",
 		posicion: {
 			lat: "-34.52077208970604",
 			lon: "-58.70211839675904",
@@ -35,13 +35,13 @@ var _businessList = [
 	},
 	{
 		id: "b-3",
-		nombre: "cuida",
-		rubro: "Petshop",
+		name: "cuida",
+		type: "Petshop",
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
-		telefono: "1122334455",
-		horario: "De 8:00 a 18:00 horas",
-		direccion: "Avenida lores nº 45",
+		phone: "1122334455",
+		timeWork: "De 8:00 a 18:00 horas",
+		address: "Avenida lores nº 45",
 		posicion: {
 			lat: "-34.520825127955575",
 			lon: "-58.705465793609626",
@@ -50,13 +50,13 @@ var _businessList = [
 	},
 	{
 		id: "b-4",
-		nombre: "te corto pelo",
-		rubro: "Peluqueria",
+		name: "te corto pelo",
+		type: "Peluqueria",
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
-		telefono: "1122334455",
-		horario: "De 8:00 a 18:00 horas",
-		direccion: "Avenida lores nº 2",
+		phone: "1122334455",
+		timeWork: "De 8:00 a 18:00 horas",
+		address: "Avenida lores nº 2",
 		posicion: {
 			lat: "-34.5242725417377",
 			lon: "-58.7060022354126",
@@ -65,13 +65,13 @@ var _businessList = [
 	},
 	{
 		id: "b-5",
-		nombre: "Juliana cuida",
-		rubro: "Veterinaria",
+		name: "Juliana cuida",
+		type: "Veterinaria",
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
-		telefono: "1122334455",
-		horario: "De 8:00 a 18:00 horas",
-		direccion: "Avenida lores nº 46",
+		phone: "1122334455",
+		timeWork: "De 8:00 a 18:00 horas",
+		address: "Avenida lores nº 46",
 		posicion: {
 			lat: "-34.51854445273208",
 			lon: "-58.70166778564454",
@@ -80,13 +80,13 @@ var _businessList = [
 	},
 	{
 		id: "b-0",
-		nombre: "Lorem ipsum dolor",
-		rubro: "Lorem ipsum dolor",
+		name: "Lorem ipsum dolor",
+		type: "Lorem ipsum dolor",
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
-		telefono: "1122334455",
-		horario: "De 8:00 a 18:00 horas",
-		direccion: "Lorem ipsum dolor",
+		phone: "1122334455",
+		timeWork: "De 8:00 a 18:00 horas",
+		address: "Lorem ipsum dolor",
 		posicion: {
 			lat: "-34.51854445273208",
 			lon: "-58.70166778564454",
@@ -95,13 +95,13 @@ var _businessList = [
 	},
 	{
 		id: "b-0",
-		nombre: "Lorem ipsum dolor",
-		rubro: "Lorem ipsum dolor",
+		name: "Lorem ipsum dolor",
+		type: "Lorem ipsum dolor",
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
-		telefono: "1122334455",
-		horario: "De 8:00 a 18:00 horas",
-		direccion: "Lorem ipsum dolor",
+		phone: "1122334455",
+		timeWork: "De 8:00 a 18:00 horas",
+		address: "Lorem ipsum dolor",
 		posicion: {
 			lat: "-34.51854445273208",
 			lon: "-58.70166778564454",
@@ -110,13 +110,13 @@ var _businessList = [
 	},
 	{
 		id: "b-0",
-		nombre: "Lorem ipsum dolor",
-		rubro: "Lorem ipsum dolor",
+		name: "Lorem ipsum dolor",
+		type: "Lorem ipsum dolor",
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
-		telefono: "1122334455",
-		horario: "De 8:00 a 18:00 horas",
-		direccion: "Lorem ipsum dolor",
+		phone: "1122334455",
+		timeWork: "De 8:00 a 18:00 horas",
+		address: "Lorem ipsum dolor",
 		posicion: {
 			lat: "-34.51854445273208",
 			lon: "-58.70166778564454",
@@ -125,13 +125,13 @@ var _businessList = [
 	},
 	{
 		id: "b-0",
-		nombre: "Lorem ipsum dolor",
-		rubro: "Lorem ipsum dolor",
+		name: "Lorem ipsum dolor",
+		type: "Lorem ipsum dolor",
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
-		telefono: "1122334455",
-		horario: "De 8:00 a 18:00 horas",
-		direccion: "Lorem ipsum dolor",
+		phone: "1122334455",
+		timeWork: "De 8:00 a 18:00 horas",
+		address: "Lorem ipsum dolor",
 		posicion: {
 			lat: "-34.51854445273208",
 			lon: "-58.70166778564454",
@@ -140,13 +140,13 @@ var _businessList = [
 	},
 	{
 		id: "b-0",
-		nombre: "Lorem ipsum dolor",
-		rubro: "Lorem ipsum dolor",
+		name: "Lorem ipsum dolor",
+		type: "Lorem ipsum dolor",
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
-		telefono: "1122334455",
-		horario: "De 8:00 a 18:00 horas",
-		direccion: "Lorem ipsum dolor",
+		phone: "1122334455",
+		timeWork: "De 8:00 a 18:00 horas",
+		address: "Lorem ipsum dolor",
 		posicion: {
 			lat: "-34.51854445273208",
 			lon: "-58.70166778564454",
@@ -155,13 +155,13 @@ var _businessList = [
 	},
 	{
 		id: "b-0",
-		nombre: "Lorem ipsum dolor",
-		rubro: "Lorem ipsum dolor",
+		name: "Lorem ipsum dolor",
+		type: "Lorem ipsum dolor",
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
-		telefono: "1122334455",
-		horario: "De 8:00 a 18:00 horas",
-		direccion: "Lorem ipsum dolor",
+		phone: "1122334455",
+		timeWork: "De 8:00 a 18:00 horas",
+		address: "Lorem ipsum dolor",
 		posicion: {
 			lat: "-34.51854445273208",
 			lon: "-58.70166778564454",
@@ -170,13 +170,13 @@ var _businessList = [
 	},
 	{
 		id: "b-0",
-		nombre: "Lorem ipsum dolor",
-		rubro: "Lorem ipsum dolor",
+		name: "Lorem ipsum dolor",
+		type: "Lorem ipsum dolor",
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
-		telefono: "1122334455",
-		horario: "De 8:00 a 18:00 horas",
-		direccion: "Lorem ipsum dolor",
+		phone: "1122334455",
+		timeWork: "De 8:00 a 18:00 horas",
+		address: "Lorem ipsum dolor",
 		posicion: {
 			lat: "-34.51854445273208",
 			lon: "-58.70166778564454",
@@ -185,13 +185,13 @@ var _businessList = [
 	},
 	{
 		id: "b-0",
-		nombre: "Lorem ipsum dolor",
-		rubro: "Lorem ipsum dolor",
+		name: "Lorem ipsum dolor",
+		type: "Lorem ipsum dolor",
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
-		telefono: "1122334455",
-		horario: "De 8:00 a 18:00 horas",
-		direccion: "Lorem ipsum dolor",
+		phone: "1122334455",
+		timeWork: "De 8:00 a 18:00 horas",
+		address: "Lorem ipsum dolor",
 		posicion: {
 			lat: "-34.51854445273208",
 			lon: "-58.70166778564454",
@@ -200,13 +200,13 @@ var _businessList = [
 	},
 	{
 		id: "b-0",
-		nombre: "Lorem ipsum dolor",
-		rubro: "Lorem ipsum dolor",
+		name: "Lorem ipsum dolor",
+		type: "Lorem ipsum dolor",
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
-		telefono: "1122334455",
-		horario: "De 8:00 a 18:00 horas",
-		direccion: "Lorem ipsum dolor",
+		phone: "1122334455",
+		timeWork: "De 8:00 a 18:00 horas",
+		address: "Lorem ipsum dolor",
 		posicion: {
 			lat: "-34.51854445273208",
 			lon: "-58.70166778564454",
@@ -215,13 +215,13 @@ var _businessList = [
 	},
 	{
 		id: "b-0",
-		nombre: "Lorem ipsum dolor",
-		rubro: "Lorem ipsum dolor",
+		name: "Lorem ipsum dolor",
+		type: "Lorem ipsum dolor",
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
-		telefono: "1122334455",
-		horario: "De 8:00 a 18:00 horas",
-		direccion: "Lorem ipsum dolor",
+		phone: "1122334455",
+		timeWork: "De 8:00 a 18:00 horas",
+		address: "Lorem ipsum dolor",
 		posicion: {
 			lat: "-34.51854445273208",
 			lon: "-58.70166778564454",
@@ -364,7 +364,7 @@ var _businessFilters = [
 	{
 		id: "bf-1",
 		label: "Tipo de rubro",
-		varKey: "rubro",
+		varKey: "type",
 		options: ["Petshop", "Veterinaria", "Peluqueria"],
 	},
 	{

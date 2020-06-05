@@ -10,25 +10,25 @@ function constructBusinessDetail(business, onclick) { //TODO: LAS VARIABLES ESTA
             <div class="close-icon" id="close-icon" onclick="${onclick}()">
                 ${ icons.x }
             </div>
-            ${ business.nombre ? 
+            ${ business.name ? 
                 `<div class="name">
-                    ${ business.nombre }
+                    ${ business.name }
                 </div>` : ""
             }
-            ${ business.rubro ? 
+            ${ business.type ? 
                 `<div class="type">
-                    ${ business.rubro }
+                    ${ business.type }
                 </div>` : ""
             }
-            ${ business.telefono ? 
+            ${ business.phone ? 
                 `<div class="phone">
                     ${ icons.phone }
-                    ${ business.telefono }
+                    ${ business.phone }
                 </div>` : ""
             }
-            ${ business.horario ? 
+            ${ business.timeWork ? 
                 `<div class="time-work">
-                    ${ business.horario }
+                    ${ business.timeWork }
                 </div>` : ""
             }
             ${ business.email ? 
@@ -36,9 +36,9 @@ function constructBusinessDetail(business, onclick) { //TODO: LAS VARIABLES ESTA
                     ${ business.email }
                 </div>` : ""
             }
-            ${ business.direccion ? 
+            ${ business.address ? 
                 `<div class="address">
-                    ${ business.direccion }
+                    ${ business.address }
                 </div>` : ""
             }
         </div>

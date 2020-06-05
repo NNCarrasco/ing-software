@@ -78,10 +78,10 @@ function createListForClusterMap(businessList){
     let listForClusterMap;
 
     listForClusterMap = businessList.map(b => {
-        let message = `<p>${b.nombre}<br>${b.rubro}</p>`
+        let message = `<p>${b.name}<br>${b.type}</p>`
         return {
             id:b.id, 
-            clusterId: b.rubro, 
+            clusterId: b.type, 
             lat:b.posicion.lat, 
             lon:b.posicion.lon, 
             popUpMessage:message,

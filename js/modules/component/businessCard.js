@@ -7,20 +7,20 @@ function constructBussinesCard(business, onclick) { //TODO: LAS VARIABLES ESTAN 
 	return `
     <div class="business-card" ${business.id? "id='" + business.id + "'" : ""} onclick="${onclick}(this)" > 
         <div class="header">
-            ${ business.nombre ? 
+            ${ business.name ? 
                 `<div class="name">
-                    ${ business.nombre }
+                    ${ business.name }
                 </div>` : ""
             }
-            ${ business.rubro ? 
-                `<div class="rubro">
-                    ${ business.rubro }
+            ${ business.type ? 
+                `<div class="type">
+                    ${ business.type }
                 </div>` : ""
             }
-            ${ business.telefono ? 
+            ${ business.phone ? 
                 `<div class="phone">
                     ${ icons.phone }
-                    ${ business.telefono }
+                    ${ business.phone }
                 </div>` : ""
             }
             ${ business.isPartner === "Si" ? 
