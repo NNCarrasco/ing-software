@@ -15,8 +15,7 @@ var lastSelected;
 const init = () => {
     initFilter(filterList);
 
-    let ungsLocation = [-34.5221554, -58.7000067];
-    initMap(ungsLocation, 16);
+    initMap();
     assignIcon('../../../assets/markerIcons/marker-star.png', "isPartner", "Si")
     assignIcon('../../../assets/markerIcons/marker.png', "isPartner", "No")
     constructClusterMap(createListForClusterMap(initialBusinessList), onMarkerClick);

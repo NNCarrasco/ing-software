@@ -3,17 +3,12 @@ let markerList = [];
 let map;
 let iconAssignation = [];
 
-function initMap(initLocation, initZoom) {
-	map = L.map("mapid").setView(initLocation, initZoom);
+function initMap() {
+	map = L.map("mapid");
 	L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
 		attribution:
 			'&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(map);
-    
-	// TODO: BORRAR
-	// mapLeaflet.on('click', function(e) {
-	//     alert("Lat, Lon : " + e.latlng.lat + ", " + e.latlng.lng)
-	// });
 }
 
 function constructClusterMap(itemsList, eventFunction = undefined) {

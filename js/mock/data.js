@@ -7,7 +7,7 @@ var _businessList = [
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
 		descriptionLong:
-			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam omnis rem ut id quas nulla officiis ea perferendis consequatur, obcaecati voluptatibus. Distinctio illo consequatur quidem quis ad modi perferendis nemo! \nLorem ipsum dolor, sit amet consectetur adipisicing elit. Totam omnis rem ut id quas nulla officiis ea perferendis consequatur, obcaecati voluptatibus. Distinctio illo consequatur quidem quis ad modi perferendis nemo!",
+			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam omnis rem ut id quas nulla officiis ea perferendis consequatur, obcaecati voluptatibus. Distinctio illo consequatur quidem quis ad modi perferendis nemo! <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam omnis rem ut id quas nulla officiis ea perferendis consequatur, obcaecati voluptatibus. Distinctio illo consequatur quidem quis ad modi perferendis nemo!",
 		phone: "1122334455",
 		timeWork: "De 8:00 a 18:00 horas",
 		address: "Avenida lores nº 43",
@@ -20,13 +20,15 @@ var _businessList = [
 	},
 	{
 		id: "b-2",
-		name: "Rodri",
+		name: "Veterinaria Dr GeLP",
 		type: "Veterinaria",
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
+		descriptionLong:
+			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Totam omnis rem ut id quas nulla officiis ea perferendis consequatur.<br> obcaecati voluptatibus. Distinctio illo consequatur quidem quis ad modi perferendis<br> nemo! <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam omnis rem ut id<br> quas nulla officiis ea perferendis consequatur, obcaecati voluptatibus. Distinctio illo<br> consequatur quidem quis ad modi perferendis nemo!",
 		phone: "1122334455",
-		timeWork: "De 8:00 a 18:00 horas",
-		address: "Avenida lores nº 44",
+		timeWork: "24 Hs",
+		address: "Avenida Lores nº 53 y Pancho Escarlata",
 		posicion: {
 			lat: "-34.52077208970604",
 			lon: "-58.70211839675904",
@@ -35,13 +37,15 @@ var _businessList = [
 	},
 	{
 		id: "b-3",
-		name: "cuida",
+		name: "Bichis Tienda de Mascotas",
 		type: "Petshop",
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
+		descriptionLong:
+			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam omnis rem ut id quas nulla officiis ea perferendis consequatur, obcaecati voluptatibus. Distinctio illo consequatur quidem quis ad modi perferendis nemo! <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam omnis rem ut id quas nulla officiis ea perferendis consequatur, obcaecati voluptatibus. Distinctio illo consequatur quidem quis ad modi perferendis nemo!",
 		phone: "1122334455",
-		timeWork: "De 8:00 a 18:00 horas",
-		address: "Avenida lores nº 45",
+		timeWork: "De 13:00 a 18:00 horas",
+		address: "Pancho Escarlata nº 600",
 		posicion: {
 			lat: "-34.520825127955575",
 			lon: "-58.705465793609626",
@@ -50,182 +54,139 @@ var _businessList = [
 	},
 	{
 		id: "b-4",
-		name: "te corto pelo",
+		name: "Canina Chaparritos",
 		type: "Peluqueria",
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
+		descriptionLong:
+			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Totam omnis rem ut id quas nulla officiis ea perferendis consequatur.<br> obcaecati voluptatibus. Distinctio illo consequatur quidem quis ad modi perferendis<br> nemo! <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam omnis rem ut id<br> quas nulla officiis ea perferendis consequatur, obcaecati voluptatibus. Distinctio illo<br> consequatur quidem quis ad modi perferendis nemo!",
 		phone: "1122334455",
-		timeWork: "De 8:00 a 18:00 horas",
-		address: "Avenida lores nº 2",
+		timeWork: "De 8:00 a 12:00 horas",
+		address: "Rodolfo y Cabrera",
 		posicion: {
 			lat: "-34.5242725417377",
 			lon: "-58.7060022354126",
 		},
-		isPartner: "No",
+		isPartner: "Si",
 	},
 	{
 		id: "b-5",
-		name: "Juliana cuida",
+		name: "Polivet",
 		type: "Veterinaria",
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
+		descriptionLong:
+			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam omnis rem ut id quas nulla officiis ea perferendis consequatur, obcaecati voluptatibus. Distinctio illo consequatur quidem quis ad modi perferendis nemo! <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam omnis rem ut id quas nulla officiis ea perferendis consequatur, obcaecati voluptatibus. Distinctio illo consequatur quidem quis ad modi perferendis nemo!",
 		phone: "1122334455",
 		timeWork: "De 8:00 a 18:00 horas",
-		address: "Avenida lores nº 46",
+		address: "Salta y La Pampa nº22",
 		posicion: {
-			lat: "-34.51854445273208",
-			lon: "-58.70166778564454",
+			lat: "-34.52222178970639",
+			lon: "-58.708738088607795",
 		},
 		isPartner: "No",
 	},
 	{
-		id: "b-0",
-		name: "Lorem ipsum dolor",
-		type: "Lorem ipsum dolor",
+		id: "b-6",
+		name: "Canina Chaparritos",
+		type: "Hogar",
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
+		descriptionLong:
+			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Totam omnis rem ut id quas nulla officiis ea perferendis consequatur.<br> obcaecati voluptatibus. Distinctio illo consequatur quidem quis ad modi perferendis<br> nemo! <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam omnis rem ut id<br> quas nulla officiis ea perferendis consequatur, obcaecati voluptatibus. Distinctio illo<br> consequatur quidem quis ad modi perferendis nemo!",
+		phone: "1122334455",
+		timeWork: "24 hs",
+		address: "Rodolfo y Cabrera",
+		posicion: { 
+			lat: "-34.52390346288427",
+			lon: "-58.695287522859886",
+		},
+		isPartner: "Si",
+	},
+	{
+		id: "b-7",
+		name: "Pequeñitos",
+		type: "Petshop",
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
+		descriptionLong:
+			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam omnis rem ut id quas nulla officiis ea perferendis consequatur, obcaecati voluptatibus. Distinctio illo consequatur quidem quis ad modi perferendis nemo! <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam omnis rem ut id quas nulla officiis ea perferendis consequatur, obcaecati voluptatibus. Distinctio illo consequatur quidem quis ad modi perferendis nemo!",
 		phone: "1122334455",
 		timeWork: "De 8:00 a 18:00 horas",
-		address: "Lorem ipsum dolor",
-		posicion: {
-			lat: "-34.51854445273208",
-			lon: "-58.70166778564454",
+		address: "Salta y La Pampa nº22",
+		posicion: {  
+			lat: "-34.52583793824539",
+			lon: "-58.701255390769816",
 		},
 		isPartner: "No",
 	},
 	{
-		id: "b-0",
-		name: "Lorem ipsum dolor",
-		type: "Lorem ipsum dolor",
+		id: "b-8",
+		name: "Las Aves",
+		type: "Hogar",
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
+		descriptionLong:
+			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Totam omnis rem ut id quas nulla officiis ea perferendis consequatur.<br> obcaecati voluptatibus. Distinctio illo consequatur quidem quis ad modi perferendis<br> nemo! <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam omnis rem ut id<br> quas nulla officiis ea perferendis consequatur, obcaecati voluptatibus. Distinctio illo<br> consequatur quidem quis ad modi perferendis nemo!",
 		phone: "1122334455",
-		timeWork: "De 8:00 a 18:00 horas",
-		address: "Lorem ipsum dolor",
-		posicion: {
-			lat: "-34.51854445273208",
-			lon: "-58.70166778564454",
+		timeWork: "24 hs",
+		address: "Pinocheo nº1",
+		posicion: { 
+			lat: "-34.52731321905199",
+			lon: "-58.699285984039314",
 		},
 		isPartner: "No",
 	},
 	{
-		id: "b-0",
-		name: "Lorem ipsum dolor",
-		type: "Lorem ipsum dolor",
+		id: "b-9",
+		name: "Rock & Dog",
+		type: "Peluqueria",
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
+		descriptionLong:
+			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam omnis rem ut id quas nulla officiis ea perferendis consequatur, obcaecati voluptatibus. Distinctio illo consequatur quidem quis ad modi perferendis nemo! <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam omnis rem ut id quas nulla officiis ea perferendis consequatur, obcaecati voluptatibus. Distinctio illo consequatur quidem quis ad modi perferendis nemo!",
 		phone: "1122334455",
 		timeWork: "De 8:00 a 18:00 horas",
-		address: "Lorem ipsum dolor",
-		posicion: {
-			lat: "-34.51854445273208",
-			lon: "-58.70166778564454",
+		address: "Salta y La Pampa nº22",
+		posicion: {  
+			lat: "-34.528974937647234",
+			lon: "-58.70954275131226",
 		},
 		isPartner: "No",
 	},
 	{
-		id: "b-0",
-		name: "Lorem ipsum dolor",
-		type: "Lorem ipsum dolor",
+		id: "b-10",
+		name: "Estilo Animal",
+		type: "Peluqueria",
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
+		descriptionLong:
+			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Totam omnis rem ut id quas nulla officiis ea perferendis consequatur.<br> obcaecati voluptatibus. Distinctio illo consequatur quidem quis ad modi perferendis<br> nemo! <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam omnis rem ut id<br> quas nulla officiis ea perferendis consequatur, obcaecati voluptatibus. Distinctio illo<br> consequatur quidem quis ad modi perferendis nemo!",
 		phone: "1122334455",
-		timeWork: "De 8:00 a 18:00 horas",
-		address: "Lorem ipsum dolor",
-		posicion: {
-			lat: "-34.51854445273208",
-			lon: "-58.70166778564454",
+		timeWork: "24 hs",
+		address: "Rodolfo y Cabrera",
+		posicion: { 
+			lat: "-34.52261072931635",
+			lon: "-58.698041439056404",
 		},
-		isPartner: "No",
+		isPartner: "Si",
 	},
 	{
-		id: "b-0",
-		name: "Lorem ipsum dolor",
-		type: "Lorem ipsum dolor",
+		id: "b-11",
+		name: "Gatitos",
+		type: "Petshop",
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
+		descriptionLong:
+			"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam omnis rem ut id quas nulla officiis ea perferendis consequatur, obcaecati voluptatibus. Distinctio illo consequatur quidem quis ad modi perferendis nemo! <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam omnis rem ut id quas nulla officiis ea perferendis consequatur, obcaecati voluptatibus. Distinctio illo consequatur quidem quis ad modi perferendis nemo!",
 		phone: "1122334455",
 		timeWork: "De 8:00 a 18:00 horas",
-		address: "Lorem ipsum dolor",
+		address: "Salta y La Pampa nº22",
 		posicion: {
-			lat: "-34.51854445273208",
-			lon: "-58.70166778564454",
+			lat: "-34.51875661120081",
+			lon: "-58.70808362960816",
 		},
 		isPartner: "No",
-	},
-	{
-		id: "b-0",
-		name: "Lorem ipsum dolor",
-		type: "Lorem ipsum dolor",
-		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
-		phone: "1122334455",
-		timeWork: "De 8:00 a 18:00 horas",
-		address: "Lorem ipsum dolor",
-		posicion: {
-			lat: "-34.51854445273208",
-			lon: "-58.70166778564454",
-		},
-		isPartner: "No",
-	},
-	{
-		id: "b-0",
-		name: "Lorem ipsum dolor",
-		type: "Lorem ipsum dolor",
-		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
-		phone: "1122334455",
-		timeWork: "De 8:00 a 18:00 horas",
-		address: "Lorem ipsum dolor",
-		posicion: {
-			lat: "-34.51854445273208",
-			lon: "-58.70166778564454",
-		},
-		isPartner: "No",
-	},
-	{
-		id: "b-0",
-		name: "Lorem ipsum dolor",
-		type: "Lorem ipsum dolor",
-		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
-		phone: "1122334455",
-		timeWork: "De 8:00 a 18:00 horas",
-		address: "Lorem ipsum dolor",
-		posicion: {
-			lat: "-34.51854445273208",
-			lon: "-58.70166778564454",
-		},
-		isPartner: "No",
-	},
-	{
-		id: "b-0",
-		name: "Lorem ipsum dolor",
-		type: "Lorem ipsum dolor",
-		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
-		phone: "1122334455",
-		timeWork: "De 8:00 a 18:00 horas",
-		address: "Lorem ipsum dolor",
-		posicion: {
-			lat: "-34.51854445273208",
-			lon: "-58.70166778564454",
-		},
-		isPartner: "No",
-	},
-	{
-		id: "b-0",
-		name: "Lorem ipsum dolor",
-		type: "Lorem ipsum dolor",
-		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum inventore laudantium ut cupiditate",
-		phone: "1122334455",
-		timeWork: "De 8:00 a 18:00 horas",
-		address: "Lorem ipsum dolor",
-		posicion: {
-			lat: "-34.51854445273208",
-			lon: "-58.70166778564454",
-		},
 	},
 ];
 
@@ -365,7 +326,7 @@ var _businessFilters = [
 		id: "bf-1",
 		label: "Tipo de rubro",
 		varKey: "type",
-		options: ["Petshop", "Veterinaria", "Peluqueria"],
+		options: ["Petshop", "Veterinaria", "Peluqueria", "Hogar"],
 	},
 	{
 		id: "bf-2",
